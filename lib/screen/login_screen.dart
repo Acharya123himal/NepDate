@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:prishma_dating_app/screen/screens.dart';
+import 'package:prishma_dating_app/screen/sign_up_screen/signUp_Screen.dart';
 import 'package:prishma_dating_app/strings.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:prishma_dating_app/widgets/widgets.dart';

@@ -33,6 +33,8 @@ dependencies:
   font_awesome_flutter: 
   flutter_gradient_colors:
   flutter_neumorphic: 
+  syncfusion_flutter_datepicker: 
+  location: 
 
 dev_dependencies:
   flutter_test:
