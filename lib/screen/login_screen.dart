@@ -120,7 +120,7 @@ class _LoginScreenState extends State<LoginScreen> {
           SizedBox(
             height: 10,
           ),
-          GradientButton(Text('Login'), Feed()),
+          GradientButton(Text('Login'), FeedScreen()),
           GestureDetector(
             onTap: () {
               Navigator.push(

@@ -101,7 +101,7 @@ class _SignUpDetailsState extends State<SignUpDetails> {
               
             ],
           ),
-          GradientButton(Text('Sign Up'), Feed()),
+          GradientButton(Text('Sign Up'), FeedScreen()),
           SizedBox(
             height: 20,
           ),
