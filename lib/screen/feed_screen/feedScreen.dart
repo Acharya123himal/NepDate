@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:prishma_dating_app/strings.dart';
+import 'package:prishma_dating_app/widgets/appBar.dart';
 
 class FeedScreen extends StatefulWidget {
   @override
@@ -16,43 +17,12 @@ class _FeedScreenState extends State<FeedScreen> {
         backgroundColor: Color(0xffeeede4),
         body: Column(
           children: [
-            Container(
-              color: Color(0xFF928C80),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Expanded(
-                    flex: 1,
-                    child: CircleAvatar(
-                      radius: 30,
-                      foregroundImage: NetworkImage(
-                        dpImageUrl,
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Expanded(
-                    flex: 5,
-                    child: Text("Hello, Sadish"),
-                  ),
-                  Expanded(
-                    flex: 1,
-                    child: Icon(
-                      FontAwesomeIcons.solidComment,
-                      color: Colors.black,
-                    ),
-                  ),
-                  Expanded(
-                    flex: 1,
-                    child: Icon(
-                      FontAwesomeIcons.ellipsisH,
-                      size: 20,
-                    ),
-                  )
-                ],
-              ),
+            CustomAppBar(
+              0xfffffff0,
+              dpImageUrl,
+              'Hello, Himal',
+              FontAwesomeIcons.solidComment,
+              FontAwesomeIcons.ellipsisH,
             ),
             Expanded(
               flex: 17,
