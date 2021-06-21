@@ -55,7 +55,7 @@ class _FeedScreenState extends State<FeedScreen> {
               ),
             ),
             Expanded(
-              flex: 3,
+              flex: 17,
               child: Padding(
                 padding: const EdgeInsets.all(15.0),
                 child: ClipRRect(
@@ -71,7 +71,7 @@ class _FeedScreenState extends State<FeedScreen> {
                         Text(
                           'Himal Acharya',
                           style: TextStyle(
-                              fontSize: 30,
+                              fontSize: 25,
                               fontWeight: FontWeight.w600,
                               color: Color(0xffBD00A1)),
                         ),
@@ -85,31 +85,34 @@ class _FeedScreenState extends State<FeedScreen> {
                         SizedBox(
                           height: 5,
                         ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: [
-                            Text(
-                              'Flutter Developer',
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w600,
-                                  color: Color(0xff4D4D4D)),
-                            ),
-                            Text(
-                              'Travelling',
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w600,
-                                  color: Color(0xff4D4D4D)),
-                            ),
-                            Text(
-                              'Music',
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w600,
-                                  color: Color(0xff4D4D4D)),
-                            ),
-                          ],
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 5),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [
+                              Text(
+                                'Flutter Developer',
+                                style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w600,
+                                    color: Color(0xff4D4D4D)),
+                              ),
+                              Text(
+                                'Travelling',
+                                style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w600,
+                                    color: Color(0xff4D4D4D)),
+                              ),
+                              Text(
+                                'Music',
+                                style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w600,
+                                    color: Color(0xff4D4D4D)),
+                              ),
+                            ],
+                          ),
                         ),
                       ],
                     ),
