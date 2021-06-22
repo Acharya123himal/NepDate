@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_gradient_colors/flutter_gradient_colors.dart';
+import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 
 class GradientButton extends StatelessWidget {
   final Widget route;
@@ -27,7 +27,6 @@ class GradientButton extends StatelessWidget {
           // colors: [Color(0xffb901a2),Color(0xff8e00bc)],
         ),
         child: OutlinedButton(
-          style: OutlinedButton.styleFrom(),
           onPressed: () {
             Navigator.push(
               context,

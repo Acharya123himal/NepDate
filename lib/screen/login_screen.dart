@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:prishma_dating_app/helper/nav_helper.dart';
 import 'package:prishma_dating_app/screen/screens.dart';
 import 'package:prishma_dating_app/screen/sign_up_screen/signUp_Screen.dart';
 import 'package:prishma_dating_app/strings.dart';
@@ -123,10 +124,7 @@ class _LoginScreenState extends State<LoginScreen> {
           GradientButton(Text('Login'), FeedScreen()),
           GestureDetector(
             onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => SignUpScreen()),
-              );
+              navHelper(context, SignUpScreen());
             },
             child: Text("Don't have an account? Sign Up"),
           )

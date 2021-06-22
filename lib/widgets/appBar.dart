@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:prishma_dating_app/helper/nav_helper.dart';
+import 'package:prishma_dating_app/screen/message_screen/message_screen.dart';
+import 'package:prishma_dating_app/screen/profile_screen/profile_screen.dart';
 
 class CustomAppBar extends StatelessWidget {
   final int color;
@@ -17,14 +21,18 @@ class CustomAppBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Expanded(
-            flex: 1,
-            child: CircleAvatar(
-              radius: 30,
-              foregroundImage: NetworkImage(
-                image,
-              ),
-            ),
+          GestureDetector(
+            onTap: () {
+              navHelper(context, ProfileScreen());
+            },
+            child: image == ''
+                ? SizedBox()
+                : CircleAvatar(
+                    radius: 30,
+                    foregroundImage: NetworkImage(
+                      image,
+                    ),
+                  ),
           ),
           SizedBox(
             width: 10,
@@ -33,19 +41,34 @@ class CustomAppBar extends StatelessWidget {
             flex: 5,
             child: Text(title),
           ),
-          Expanded(
-            flex: 1,
+          GestureDetector(
+            onTap: () {
+              navHelper(context, MessageScreen());
+            },
             child: Icon(
               firstIcon,
               color: Colors.black,
+              size: 30,
             ),
           ),
-          Expanded(
-            flex: 1,
+          SizedBox(
+            width: 10,
+          ),
+          GestureDetector(
+            onTap: () {
+              if (secondIcon == Icons.info) {
+                navHelper(context, ProfileScreen());
+              } else if (secondIcon == FontAwesomeIcons.ellipsisH) {
+                // navHelper(context, routeName)
+              }
+            },
             child: Icon(
               secondIcon,
-              size: 20,
+              size: 30,
             ),
+          ),
+          SizedBox(
+            width: 10,
           )
         ],
       ),
